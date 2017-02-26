@@ -313,7 +313,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 <!-- ***********************************************************-->
 ## Step 15 - Programmer 2 pushes `update-class-heading` branch to remote
 
-1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote
+1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote.
 
   ```sh
     $ git push origin update-class-heading

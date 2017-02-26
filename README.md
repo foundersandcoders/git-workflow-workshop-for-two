@@ -28,8 +28,17 @@ Your client has just called you and asked to improve heading on their [company w
 
 There are two issues that when resolved will make their site super cool:
 
-1. Spelling mistake in the heading.
+1. Spelling mistake in the heading (WORKSHOW -> WORKSHOP)
 1. The name of the css class in the heading needs to be updated.
+
+Before:
+
+<img src="images/heading-before.png" width="500" height="auto">
+
+After:
+
+<img src="images/heading-after.png" width="500" height="auto">
+
 
 You decide that one of you (Programmer 1) will resolve issue number 1 while the other person (Programmer 2) will resolve issue number 2.
 

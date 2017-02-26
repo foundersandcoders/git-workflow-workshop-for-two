@@ -47,15 +47,15 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 1 - Programmer 1 forks this repository
+## Step 1 - Programmer 1 forks this repository and adds Programmer 2 as a collaborator
 
 1. Programmer 1 [forks](https://help.github.com/articles/fork-a-repo/) this repository.
 
-  <img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" width="500" height="auto">
+  <img src="images/fork-button.jpeg" width="500" height="auto" alt="fork button">
 
-2. Programmer 1 goes into settings of the newly forked repository and adds Programmer 2 as a [contributor](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/).
+2. Programmer 1 goes into settings of the newly forked repository and adds Programmer 2 as a [collaborator](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/).
 
-  <img src="https://help.github.com/assets/images/help/repository/repo-settings-collab-autofill.png" width="500" height="auto">
+  <img src="images/collaborator-settings.png" width="500" height="auto" alt="collaborator settings">
 
 3. Programmer 2 accepts the invitation to the new repository via their email.
 
@@ -66,11 +66,11 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 1. Programmer 2 goes into repository settings and enables [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/).
 
-  <img src="https://help.github.com/assets/images/help/pages/select-gh-pages-or-master-as-source.png" width="500" height="auto">
+  <img src="images/github-pages-settings.png" width="500" height="auto" alt="github pages settings">
 
-2. Programmer 2 goes into repository settings and makes sure that the [issues](https://guides.github.com/features/issues/) feature is enabled.
+2. Programmer 2 goes into repository settings and makes sure that the [issues](https://guides.github.com/features/issues/) feature is enabled. This will enable you to see your changes on live website.
 
-  <img src="https://help.github.com/assets/images/help/issues/issues_settings_remove_from_repo.png" width="500" height="auto">
+  <img src="images/issues-checkbox.png" width="500" height="auto" alt="issues checkbox">
 
 3. Programmer 2 creates the following two [issues](https://help.github.com/articles/creating-an-issue/):
 
@@ -85,7 +85,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 1. Both programmers [clone](https://help.github.com/articles/cloning-a-repository/) the forked repository using their terminal.
 
-  <img src="https://help.github.com/assets/images/help/repository/https-url-clone.png" width="500" height="auto">
+  <img src="images/clone-repository-dialog.png" width="500" height="auto" alt="clone repository dialog">
 
   ```sh
   $ git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
@@ -209,7 +209,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 1. Programmer 1 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `fix-typo-heading` as a head branch. Please add a descriptive title (e.g. `Fix the spelling mistake in page heading`) and leave a comment linking the pull request with the issue `#1`. Please also select Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
-  <img src="https://help.github.com/assets/images/help/pull_requests/pull-request-review-page.png" width="500" height="auto">
+  <img src="images/pull-request-open.png" width="500" height="auto" alt="open pull request page">
 
 
 
@@ -218,9 +218,9 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 1. Programmer 2 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 
-  <img src="https://help.github.com/assets/images/help/repository/repo-tabs-pull-requests.png" width="500" height="auto">
+  <img src="images/pull-request-tab.png" width="500" height="auto" alt="pull request tab button">
 
-2. Programmer 2 opens the live website on GitHub pages to double check that the spelling mistake has been corrected. The URL typically has the following format: https://USERNAME.github.io/git-workflow-workshop-for-two/
+2. Programmer 2 opens the live website on GitHub pages to double check that the spelling mistake has been corrected. The URL typically has the following format: https://ENTER-YOUR-USERNAME-HERE.github.io/git-workflow-workshop-for-two/
 
 
 
@@ -337,4 +337,4 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 2. Programmer 1 opens the live website on GitHub pages to double check the new heading style.
 
-  <img src="images/heading-after.png" width="500" height="auto">
+  <img src="images/heading-after.png" width="500" height="auto" alt="git workflow workshop heading with css style">

@@ -118,13 +118,13 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 1. Programmer 1 fixes only the spelling typo in the heading (Workshow -> Workshop).
 
   ```html
-  <h1 class="nice-heading">Git Workflow Workshop</h1>
+  <h1 class="some-heading">GIT WORKFLOW WORKSHOP</h1>
   ```
 
 1. Programmer 2 updates only the class name of the heading (`nice-heading` -> `page-heading`).
 
   ```html
-  <h1 class="page-heading">Git Workflow Workshow</h1>
+  <h1 class="page-heading">GIT WORKFLOW WORKSHOW</h1>
   ```
 
 
@@ -265,9 +265,9 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
   <body>
 
   <<<<<<< HEAD
-      <h1 class="page-heading">Git Workflow Workshow</h1>
+      <h1 class="page-heading">GIT WORKFLOW WORKSHOW</h1>
   =======
-      <h1 class="nice-heading">Git Workflow Workshop</h1>
+      <h1 class="some-heading">GIT WORKFLOW WORKSHOP</h1>
   >>>>>>> master
 
   </body>
@@ -290,7 +290,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
   <body>
 
-      <h1 class="page-heading">Git Workflow Workshop</h1>
+      <h1 class="page-heading">GIT WORKFLOW WORKSHOP</h1>
 
   </body>
 
@@ -334,3 +334,5 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 1. Programmer 1 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 
 2. Programmer 1 opens the live website on GitHub pages to double check the new heading style.
+
+  <img src="images/heading-after.png" width="500" height="auto">

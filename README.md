@@ -26,10 +26,10 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 
 Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
 
-There are two issues that when resolved will make their site super cool:
+There are two issues that when resolved will make the heading look really nice:
 
 1. Spelling mistake in the heading (WORKSHOW -> WORKSHOP)
-1. The name of the css class in the heading needs to be updated.
+1. The name of the css class in the heading needs to be updated so that existing styles in the style.css file take effect.
 
 Before:
 
@@ -249,7 +249,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
   $ git merge master
   ```
 
-1. There should be a merge conflict since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and `master` markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
+1. There should be a merge conflict since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
 
   ```html
   <!DOCTYPE html>

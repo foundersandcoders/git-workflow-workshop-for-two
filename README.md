@@ -51,7 +51,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 2 - Both Programmers clone the forked repository
+## Step 2 - Both programmers clone the forked repository
 
 1. Both programmers [clone](https://help.github.com/articles/cloning-a-repository/) the forked repository using their terminal.
 
@@ -70,7 +70,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 3 - Both Programmers create one branch each
+## Step 3 - Both programmers create one branch each
 
 1. Both programmers create one [branch](https://help.github.com/articles/about-branches/) each. Unique and descriptive branch names work best, for example, `fix-typo-heading` (Programmer 1) and `update-class-heading` (Programmer 2).
 
@@ -81,4 +81,21 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
   # Programmer 2:
   $ git branch update-class-heading
 
+  ```
+
+
+
+<!-- ***********************************************************-->
+## Step 4 - Both programmers make the requested change in the `index.html` file
+
+1. Programmer 1 fixes only the spelling typo in the heading (Workshow -> Workshop)
+
+  ```html
+  <h1 class="nice-heading">Git Workflow Workshop</h1>
+  ```
+
+1. Programmer 2 updates only the class name of the heading (`nice-heading` -> `page-heading`)
+
+  ```html
+  <h1 class="page-heading">Git Workflow Workshow</h1>
   ```

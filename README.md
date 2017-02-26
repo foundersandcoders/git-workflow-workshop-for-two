@@ -51,7 +51,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 2 - Programmer 2 Enables GitHub pages and reports 2 issues
+## Step 2 - Programmer 2 enables GitHub pages and reports 2 issues
 
 1. Programmer 2 goes into repository settings and enables [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/).
 
@@ -104,7 +104,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 5 - Both programmers open the `index.html` file and make one requested change each
+## Step 5 - Both programmers open their `index.html` files and make one requested change each
 
 1. Programmer 1 fixes only the spelling typo in the heading (Workshow -> Workshop).
 
@@ -121,9 +121,9 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 6 - Both programmers save the `index.html` file and check status
+## Step 6 - Both programmers save their `index.html` files and check status
 
-1. Both programmers save the file and check the [status](https://git-scm.com/docs/git-status) to confirm that `index.html` file has been modified.
+1. Both programmers save their `index.html` files and check the [status](https://git-scm.com/docs/git-status) to confirm that the file has been modified.
 
   ```sh
   $ git status
@@ -134,7 +134,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 <!-- ***********************************************************-->
 ## Step 7 - Both programmers add the modified `index.html` file to the staging area
 
-1. Both programmers add the modified `index.html` file to the [staging area](http://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git).
+1. Both programmers add their modified `index.html` files to the [staging area](http://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git).
 
   ```sh
   $ git add index.html
@@ -196,12 +196,18 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 <!-- ***********************************************************-->
 ## Step 11 - Programmer 1 creates a pull request
 
-1. Programmer navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) and selects Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+1. Programmer 1 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `fix-typo-heading` as a head branch. Please add a descriptive title (e.g. `Fix the spelling mistake in page heading`) and leave a comment linking the pull request with the issue `#1`. Please also select Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+
+  <img src="https://help.github.com/assets/images/help/pull_requests/pull-request-review-page.png" width="500" height="auto">
 
 
 
 
 <!-- ***********************************************************-->
-## Step 12 - Programmer 2 merges 
+## Step 12 - Programmer 2 merges the pull request :+1:
 
-1. Programmer 1 creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request)
+1. Programmer 2 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
+
+  <img src="https://help.github.com/assets/images/help/repository/repo-tabs-pull-requests.png" width="500" height="auto">
+
+2. Programmer 2 opens the live website on GitHub pages to double check that the spelling mistake has been corrected. The URL typically has the following format: https://USERNAME.github.io/git-workflow-workshop-for-two/

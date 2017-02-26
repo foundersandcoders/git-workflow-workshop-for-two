@@ -5,7 +5,7 @@
 <!-- ***********************************************************-->
 ## Workshop summary
 
-An exercise to practice git workflow skills. The workshop should be carried out by two programmers, working on two separate computers. The skills practiced include:
+An exercise to practice git workflow skills. The workshop should be undertaken by two programmers, working on two computers. The skills practiced include:
 
 - cloning a repository
 - creating branches
@@ -24,7 +24,7 @@ An exercise to practice git workflow skills. The workshop should be carried out 
 <!-- ***********************************************************-->
 ## OK, let's start :rocket:
 
-Your client has just called you and asked to improve their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
+Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
 
 There are two issues that when resolved will make their site super cool:
 
@@ -160,15 +160,15 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 9 - Programmer 1 switches to master branch and pulls the latest changes on the remote master branch
+## Step 9 - Programmer 1 switches to `master` branch and pulls remote `master` branch
 
-1. Programmer 1 switches to master branch.
+1. Programmer 1 switches to `master` branch.
 
   ```sh
   $ git checkout master
   ```
 
-1. Programmer 1 [pulls](https://git-scm.com/docs/git-pull) the remote master branch to make sure that the latest version of the project is available locally. There should be no changes since none of you have pushed any changes to the remote yet. It is a good practice to regularly check for changes on the remote before pushing your local changes.
+1. Programmer 1 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally. There should be no changes since none of you have pushed any changes to the remote yet. It is a good practice to regularly check for changes on the remote before pushing your local changes.
 
   ```sh
   $ git pull origin master
@@ -202,7 +202,6 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 
-
 <!-- ***********************************************************-->
 ## Step 12 - Programmer 2 merges the pull request :+1:
 
@@ -211,3 +210,118 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
   <img src="https://help.github.com/assets/images/help/repository/repo-tabs-pull-requests.png" width="500" height="auto">
 
 2. Programmer 2 opens the live website on GitHub pages to double check that the spelling mistake has been corrected. The URL typically has the following format: https://USERNAME.github.io/git-workflow-workshop-for-two/
+
+
+
+<!-- ***********************************************************-->
+## Step 13 - Programmer 2 switches to `master` branch, pulls the remote `master` branch, tries to merge it into `update-class-heading` branch and :collision: resolves merge conflicts :collision:
+
+1. Programmer 2 switches to `master` branch.
+
+  ```sh
+  $ git checkout master
+  ```
+
+1. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally. There have been in the remote `master` branch changes since none of you have pushed any changes to the remote yet.
+
+  ```sh
+  $ git pull origin master
+  ```
+
+1. Programmer 2 switches back to the `update-class-heading` branch.
+
+  ```sh
+  $ git checkout update-class-heading
+  ```
+
+1. Programmer 2 tries to merge `master` branch into `update-class-heading` branch.
+
+  ```sh
+  $ git merge master
+  ```
+
+1. There should be a merge conflict since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and `master` markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Document</title>
+  </head>
+
+  <body>
+
+  <<<<<<< HEAD
+      <h1 class="page-heading">Git Workflow Workshow</h1>
+  =======
+      <h1 class="nice-heading">Git Workflow Workshop</h1>
+  >>>>>>> master
+
+  </body>
+
+  </html>
+  ```
+
+1. Programmer 1 saves the following version of the `index.html` file so that both issues are addressed.
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Document</title>
+  </head>
+
+  <body>
+
+      <h1 class="page-heading">Git Workflow Workshop</h1>
+
+  </body>
+
+  </html>
+  ```
+
+  1. Programmer 1 adds the `index.html` file to staging area and commits the changes occurred during the merge conflict.
+
+    ```sh
+    # First add to staging area
+    $ git add index.html
+
+    # Then commit changes
+    $ git commit -m 'Fix merge conflict
+    > Relates #1 and #2'
+    ```
+
+
+
+<!-- ***********************************************************-->
+## Step 15 - Programmer 2 pushes `update-class-heading` branch to remote
+
+1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote
+
+  ```sh
+    $ git push origin update-class-heading
+  ```
+
+
+
+<!-- ***********************************************************-->
+## Step 16 - Programmer 2 creates a pull request
+
+1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#2`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+
+
+
+<!-- ***********************************************************-->
+## Step 17 - Programmer 1 merges the pull request :+1:
+
+1. Programmer 1 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
+
+2. Programmer 1 opens the live website on GitHub pages to double check the new heading style.

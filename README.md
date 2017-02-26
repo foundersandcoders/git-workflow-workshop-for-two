@@ -275,16 +275,16 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   </body>
   ```
 
-  1. Programmer 1 adds the `index.html` file to staging area and commits the changes occurred during the merge conflict.
+1. Programmer 1 adds the `index.html` file to staging area and commits the changes occurred during the merge conflict.
 
-    ```sh
-    # First add to staging area
-    $ git add index.html
+  ```sh
+  # First add to staging area
+  $ git add index.html
 
-    # Then commit changes
-    $ git commit -m 'Fix merge conflict
-    > Relates #1 and #2'
-    ```
+  # Then commit changes
+  $ git commit -m 'Fix merge conflict
+  > Relates #1 and #2'
+  ```
 
 
 

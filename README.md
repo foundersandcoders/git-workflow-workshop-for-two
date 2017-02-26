@@ -162,14 +162,46 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 <!-- ***********************************************************-->
 ## Step 9 - Programmer 1 switches to master branch and pulls the latest changes on the remote master branch
 
-1. Programmers 1 switches to master branch.
+1. Programmer 1 switches to master branch.
 
   ```sh
   $ git checkout master
   ```
 
-1. Programmers 1 pulls the remote master branch to make sure that the latest version of the project is available locally. There should be no changes since none of you have pushed any changes to remote. It is however a good practice to regularly check for changes on the remote.
+1. Programmer 1 [pulls](https://git-scm.com/docs/git-pull) the remote master branch to make sure that the latest version of the project is available locally. There should be no changes since none of you have pushed any changes to the remote yet. It is a good practice to regularly check for changes on the remote before pushing your local changes.
 
   ```sh
   $ git pull origin master
   ```
+
+1. Programmer 1 switches back to the `fix-typo-heading` branch.
+
+  ```sh
+  $ git checkout fix-typo-heading
+  ```
+
+
+
+<!-- ***********************************************************-->
+## Step 10 - Programmer 1 pushes `fix-typo-heading` branch to remote
+
+1. Programmer 1 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `fix-typo-heading` branch to remote
+
+  ```sh
+  $ git push origin fix-typo-heading
+  ```
+
+
+
+<!-- ***********************************************************-->
+## Step 11 - Programmer 1 creates a pull request
+
+1. Programmer navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) and selects Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+
+
+
+
+<!-- ***********************************************************-->
+## Step 12 - Programmer 2 merges 
+
+1. Programmer 1 creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request)

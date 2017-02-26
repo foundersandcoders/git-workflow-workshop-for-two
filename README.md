@@ -100,7 +100,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 4 - Both programmers create one branch each
+## Step 4 - Both programmers create one branch each and switch to them
 
 1. Both programmers create one [branch](https://help.github.com/articles/about-branches/) each. Unique and descriptive branch names work best, for example, `fix-typo-heading` (Programmer 1) and `update-class-heading` (Programmer 2).
 
@@ -110,6 +110,16 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
   # Programmer 2:
   $ git branch update-class-heading
+  ```
+
+1. Both programmers leave the master branch by switching to the new branches.
+
+  ```sh
+  # Programmer 1:
+  $ git checkout fix-typo-heading
+
+  # Programmer 2:
+  $ git checkout update-class-heading
   ```
 
 

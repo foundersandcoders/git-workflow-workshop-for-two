@@ -80,22 +80,41 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
   # Programmer 2:
   $ git branch update-class-heading
-
   ```
 
 
 
 <!-- ***********************************************************-->
-## Step 4 - Both programmers make the requested change in the `index.html` file
+## Step 4 - Both programmers open the `index.html` file and make one requested change each
 
-1. Programmer 1 fixes only the spelling typo in the heading (Workshow -> Workshop)
+1. Programmer 1 fixes only the spelling typo in the heading (Workshow -> Workshop).
 
   ```html
   <h1 class="nice-heading">Git Workflow Workshop</h1>
   ```
 
-1. Programmer 2 updates only the class name of the heading (`nice-heading` -> `page-heading`)
+1. Programmer 2 updates only the class name of the heading (`nice-heading` -> `page-heading`).
 
   ```html
   <h1 class="page-heading">Git Workflow Workshow</h1>
+  ```
+
+
+<!-- ***********************************************************-->
+## Step 5 - Both programmers save the `index.html` file and check status
+
+1. Both programmers save the file and check the [status](https://git-scm.com/docs/git-status) to confirm that `index.html` file has been modified.
+
+  ```sh
+  $ git status
+  ```
+
+
+<!-- ***********************************************************-->
+## Step 6 - Both programmers add the modified `index.html` file to staging area
+
+1. Both programmers save the file and check the status to confirm that `index.html` file has been modified.
+
+  ```sh
+  $ git status
   ```

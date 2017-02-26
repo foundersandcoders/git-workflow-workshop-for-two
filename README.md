@@ -111,10 +111,10 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 6 - Both programmers add the modified `index.html` file to staging area
+## Step 6 - Both programmers add the modified `index.html` file to the staging area
 
-1. Both programmers save the file and check the status to confirm that `index.html` file has been modified.
+1. Both programmers add the modified `index.html` file to the [staging area](http://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git).
 
   ```sh
-  $ git status
+  $ git add index.html
   ```

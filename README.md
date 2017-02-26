@@ -28,7 +28,7 @@ Your client has just called you and asked to improve heading on their [company w
 
 There are two issues in that when resolved will make the heading look really nice:
 
-1. Spelling mistake in the heading ('WORKSHOW' should be replaced with 'WORKSHOP')
+1. Spelling mistake in the heading (the word 'WORKSHOW' should be replaced with 'WORKSHOP')
 1. The name of the css class in the heading needs to be updated so that existing styles in the `style.css` file can take effect (`class="some-heading"` should be replaced with `class="page-heading"`).
 
 Current heading:
@@ -40,7 +40,9 @@ When you apply the two changes above the heading will look like this:
 <img src="images/heading-after.png" width="500" height="auto" alt="git workflow workshop heading with css style">
 
 
-You decide that one of you (Programmer 1) will resolve issue number 1 while the other person (Programmer 2) will resolve issue number 2.
+You decide that one of you **(Programmer 1) will resolve issue number 1** while the other person **(Programmer 2) will resolve issue number 2**.
+
+**Note: Only one line in the `index.html` file needs to be modified.**
 
 
 

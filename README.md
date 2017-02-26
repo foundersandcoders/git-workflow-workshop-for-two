@@ -222,7 +222,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
   $ git checkout master
   ```
 
-1. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally. There have been in the remote `master` branch changes since none of you have pushed any changes to the remote yet.
+1. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
 
   ```sh
   $ git pull origin master

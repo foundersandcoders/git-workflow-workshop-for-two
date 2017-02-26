@@ -28,8 +28,17 @@ Your client has just called you and asked to improve heading on their [company w
 
 There are two issues that when resolved will make their site super cool:
 
-1. Spelling mistake in the heading.
+1. Spelling mistake in the heading (WORKSHOW -> WORKSHOP)
 1. The name of the css class in the heading needs to be updated.
+
+Before:
+
+<img src="images/heading-before.png" width="500" height="auto">
+
+After:
+
+<img src="images/heading-after.png" width="500" height="auto">
+
 
 You decide that one of you (Programmer 1) will resolve issue number 1 while the other person (Programmer 2) will resolve issue number 2.
 
@@ -109,13 +118,13 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 1. Programmer 1 fixes only the spelling typo in the heading (Workshow -> Workshop).
 
   ```html
-  <h1 class="nice-heading">Git Workflow Workshop</h1>
+  <h1 class="some-heading">GIT WORKFLOW WORKSHOP</h1>
   ```
 
 1. Programmer 2 updates only the class name of the heading (`nice-heading` -> `page-heading`).
 
   ```html
-  <h1 class="page-heading">Git Workflow Workshow</h1>
+  <h1 class="page-heading">GIT WORKFLOW WORKSHOW</h1>
   ```
 
 
@@ -222,7 +231,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
   $ git checkout master
   ```
 
-1. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally. There have been in the remote `master` branch changes since none of you have pushed any changes to the remote yet.
+1. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
 
   ```sh
   $ git pull origin master
@@ -256,9 +265,9 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
   <body>
 
   <<<<<<< HEAD
-      <h1 class="page-heading">Git Workflow Workshow</h1>
+      <h1 class="page-heading">GIT WORKFLOW WORKSHOW</h1>
   =======
-      <h1 class="nice-heading">Git Workflow Workshop</h1>
+      <h1 class="some-heading">GIT WORKFLOW WORKSHOP</h1>
   >>>>>>> master
 
   </body>
@@ -281,7 +290,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
   <body>
 
-      <h1 class="page-heading">Git Workflow Workshop</h1>
+      <h1 class="page-heading">GIT WORKFLOW WORKSHOP</h1>
 
   </body>
 
@@ -304,7 +313,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 <!-- ***********************************************************-->
 ## Step 15 - Programmer 2 pushes `update-class-heading` branch to remote
 
-1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote
+1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote.
 
   ```sh
     $ git push origin update-class-heading
@@ -325,3 +334,5 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 1. Programmer 1 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 
 2. Programmer 1 opens the live website on GitHub pages to double check the new heading style.
+
+  <img src="images/heading-after.png" width="500" height="auto">

@@ -26,7 +26,7 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 
 Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
 
-There are two issues in that when resolved will make the heading look really nice:
+There are two issues that when resolved will make the heading look really nice:
 
 1. Spelling mistake in the heading (the word 'WORKSHOW' should be replaced with 'WORKSHOP')
 1. The name of the css class in the heading needs to be updated so that existing styles in the `style.css` file can take effect (`class="some-heading"` should be replaced with `class="page-heading"`).
@@ -64,11 +64,11 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 <!-- ***********************************************************-->
 ## Step 2 - Programmer 2 enables GitHub pages and reports 2 issues
 
-1. Programmer 2 goes into repository settings and enables [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/).
+1. Programmer 2 goes into repository settings and enables [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/). This will enable you to see your changes on live website.
 
   <img src="images/github-pages-settings.png" width="500" height="auto" alt="github pages settings">
 
-2. Programmer 2 goes into repository settings and makes sure that the [issues](https://guides.github.com/features/issues/) feature is enabled. This will enable you to see your changes on live website.
+2. Programmer 2 goes into repository settings and makes sure that the [issues](https://guides.github.com/features/issues/) feature is enabled.
 
   <img src="images/issues-checkbox.png" width="500" height="auto" alt="issues checkbox">
 
@@ -117,13 +117,13 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 <!-- ***********************************************************-->
 ## Step 5 - Both programmers open their `index.html` files and make one requested change each
 
-1. Programmer 1 fixes only the spelling typo in the heading (Workshow -> Workshop).
+1. **Programmer 1 fixes only the spelling typo** in the heading (WORKSHOW -> WORKSHOP). Please do not update the class name. This is dealt with by Programmer 2.
 
   ```html
   <h1 class="some-heading">GIT WORKFLOW WORKSHOP</h1>
   ```
 
-1. Programmer 2 updates only the class name of the heading (`nice-heading` -> `page-heading`).
+1. **Programmer 2 updates only the class name** of the heading (`class="some-heading"` -> `class="page-heading"`). Please do not fix the spelling mistake. This is dealt with by Programmer 1.
 
   ```html
   <h1 class="page-heading">GIT WORKFLOW WORKSHOW</h1>
@@ -251,19 +251,9 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   $ git merge master
   ```
 
-1. There should be a merge conflict since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
+1. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
 
   ```html
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <title>Document</title>
-  </head>
-
   <body>
 
   <<<<<<< HEAD
@@ -273,30 +263,16 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   >>>>>>> master
 
   </body>
-
-  </html>
   ```
 
-1. Programmer 1 saves the following version of the `index.html` file so that both issues are addressed.
+1. Programmer 1 removes HEAD and master markers and leaves only one line with `<h1>` heading so that both issues are addressed.
 
   ```html
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <title>Document</title>
-  </head>
-
   <body>
 
       <h1 class="page-heading">GIT WORKFLOW WORKSHOP</h1>
 
   </body>
-
-  </html>
   ```
 
   1. Programmer 1 adds the `index.html` file to staging area and commits the changes occurred during the merge conflict.
@@ -342,4 +318,4 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Thank you 😄 for checking out the 'Git Workflow Workshop for Two Programmers' :clap:
+## That's it 😄 Thank you for checking out the 'Git Workflow Workshop for Two Programmers' :clap:

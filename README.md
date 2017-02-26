@@ -1,4 +1,4 @@
-# Git workflow workshop for two programmers
+# Git workflow workshop for two programmers 💻 💻
 
 
 

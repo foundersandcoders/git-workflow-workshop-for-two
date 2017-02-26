@@ -17,7 +17,7 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 - resolving merge conflicts
 - pushing to remote repository
 - creating a pull request on Github
-- merging a pull request to remote master branch
+- merging a pull request on GitHub
 
 
 
@@ -26,18 +26,18 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 
 Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
 
-There are two issues that when resolved will make the heading look really nice:
+There are two issues in that when resolved will make the heading look really nice:
 
-1. Spelling mistake in the heading (WORKSHOW -> WORKSHOP)
-1. The name of the css class in the heading needs to be updated so that existing styles in the style.css file take effect.
+1. Spelling mistake in the heading ('WORKSHOW' should be replaced with 'WORKSHOP')
+1. The name of the css class in the heading needs to be updated so that existing styles in the `style.css` file can take effect (`class="some-heading"` should be replaced with `class="page-heading"`).
 
-Before:
+Current heading:
 
-<img src="images/heading-before.png" width="500" height="auto">
+<img src="images/heading-before.png" width="500" height="auto" alt="git workflow workshop heading without css style">
 
-After:
+When you apply the two changes above the heading will look like this:
 
-<img src="images/heading-after.png" width="500" height="auto">
+<img src="images/heading-after.png" width="500" height="auto" alt="git workflow workshop heading with css style">
 
 
 You decide that one of you (Programmer 1) will resolve issue number 1 while the other person (Programmer 2) will resolve issue number 2.

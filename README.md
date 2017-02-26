@@ -156,3 +156,20 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
   $ git commit -m 'Update class name in heading
   > Relates #2'
   ```
+
+
+
+<!-- ***********************************************************-->
+## Step 9 - Programmer 1 switches to master branch and pulls the latest changes on the remote master branch
+
+1. Programmers 1 switches to master branch.
+
+  ```sh
+  $ git checkout master
+  ```
+
+1. Programmers 1 pulls the remote master branch to make sure that the latest version of the project is available locally. There should be no changes since none of you have pushed any changes to remote. It is however a good practice to regularly check for changes on the remote.
+
+  ```sh
+  $ git pull origin master
+  ```

@@ -51,7 +51,26 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 2 - Both programmers clone the forked repository
+## Step 2 - Programmer 2 Enables GitHub pages and reports 2 issues
+
+1. Programmer 2 goes into repository settings and enables [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/).
+
+  <img src="https://help.github.com/assets/images/help/pages/select-gh-pages-or-master-as-source.png" width="500" height="auto">
+
+2. Programmer 2 goes into repository settings and makes sure that the [issues](https://guides.github.com/features/issues/) feature is enabled.
+
+  <img src="https://help.github.com/assets/images/help/issues/issues_settings_remove_from_repo.png" width="500" height="auto">
+
+3. Programmer 2 creates the following two [issues](https://help.github.com/articles/creating-an-issue/):
+
+  `Fix spelling typo in <h1> heading`
+
+  `Correct the class name of <h1> heading to match the existing class name in the css file`
+
+
+
+<!-- ***********************************************************-->
+## Step 3 - Both programmers clone the forked repository
 
 1. Both programmers [clone](https://help.github.com/articles/cloning-a-repository/) the forked repository using their terminal.
 
@@ -70,7 +89,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 3 - Both programmers create one branch each
+## Step 4 - Both programmers create one branch each
 
 1. Both programmers create one [branch](https://help.github.com/articles/about-branches/) each. Unique and descriptive branch names work best, for example, `fix-typo-heading` (Programmer 1) and `update-class-heading` (Programmer 2).
 
@@ -85,7 +104,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 4 - Both programmers open the `index.html` file and make one requested change each
+## Step 5 - Both programmers open the `index.html` file and make one requested change each
 
 1. Programmer 1 fixes only the spelling typo in the heading (Workshow -> Workshop).
 
@@ -102,7 +121,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 5 - Both programmers save the `index.html` file and check status
+## Step 6 - Both programmers save the `index.html` file and check status
 
 1. Both programmers save the file and check the [status](https://git-scm.com/docs/git-status) to confirm that `index.html` file has been modified.
 
@@ -113,7 +132,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 6 - Both programmers add the modified `index.html` file to the staging area
+## Step 7 - Both programmers add the modified `index.html` file to the staging area
 
 1. Both programmers add the modified `index.html` file to the [staging area](http://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git).
 
@@ -124,7 +143,7 @@ You decide that one of you (Programmer 1) will resolve issue number 1 while the 
 
 
 <!-- ***********************************************************-->
-## Step 7 - Both programmers commit their changes.
+## Step 8 - Both programmers commit their changes.
 
 1. Both programmers [commit](http://stackoverflow.com/questions/27˜Ω45076/what-are-the-differences-between-git-commit-and-git-push) the changes. Before closing the commit message with a quote symbol you can press enter on your keyboard to continue typing in the new terminal line. The text in the second line can be used as an additional message. It is a good practice to link your commit to an existing issue by typing  `Relates #1`. Thanks to using the hash symbol followed by the relevant issue number your commit will be [automatically linked to an existing issue](https://help.github.com/articles/autolinked-references-and-urls/).
 

@@ -1,4 +1,4 @@
-# Git workflow workshop for two programmers 💻 💻
+# Git Workflow Workshop for Two Programmers 💻 💻
 
 
 
@@ -338,3 +338,8 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 2. Programmer 1 opens the live website on GitHub pages to double check the new heading style.
 
   <img src="images/heading-after.png" width="500" height="auto" alt="git workflow workshop heading with css style">
+
+
+
+<!-- ***********************************************************-->
+## Thank you 😄 for checking out the 'Git Workflow Workshop for Two Programmers' :clap:

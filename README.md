@@ -24,7 +24,7 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 <!-- ***********************************************************-->
 ## OK, let's start :rocket:
 
-Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
+Your client has just called you and asked you to improve the heading on their [company website](https://foundersandcoders.github.io/git-workflow-workshop-for-two/).
 
 There are two issues that when resolved will make the heading look really nice:
 

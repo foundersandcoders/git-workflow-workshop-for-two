@@ -299,7 +299,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 15 - Programmer 2 pushes `update-class-heading` branch to remote
+## Step 14 - Programmer 2 pushes `update-class-heading` branch to remote
 
 1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote.
 
@@ -310,14 +310,14 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 16 - Programmer 2 creates a pull request
+## Step 15 - Programmer 2 creates a pull request
 
 1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#2`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
 
 
 <!-- ***********************************************************-->
-## Step 17 - Programmer 1 merges the pull request :+1:
+## Step 16 - Programmer 1 merges the pull request :+1:
 
 1. Programmer 1 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 

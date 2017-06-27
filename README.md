@@ -329,3 +329,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 <!-- ***********************************************************-->
 ## That's it 😄 Thank you for checking out the 'Git Workflow Workshop for Two Programmers' :clap:
+
+**Note**: This workshop introduces you to the idea of forking a repository. This is very useful when wanting to contribute to existing open source projects 💯
+
+However, forking is not required when starting a new repository under `foundersandcoders` or `FAC-X` organisations. All your fellow students will be automatically added as contributors.

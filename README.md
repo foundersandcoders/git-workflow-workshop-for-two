@@ -57,22 +57,22 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
   <img src="images/collaborator-settings.png" width="500" height="auto" alt="collaborator settings">
 
-3. Programmer 2 accepts the invitation to the new repository via their email.
+3. Programmer 1 enables [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/). This will enable you to see your changes on live website.
+
+  <img src="images/github-pages-settings.png" width="500" height="auto" alt="github pages settings">
+
+4. Programmer 1 makes sure that the [issues](https://guides.github.com/features/issues/) feature is enabled.
+
+  <img src="images/issues-checkbox.png" width="500" height="auto" alt="issues checkbox">
+
+5. Programmer 2 accepts the invitation to the new repository via their email.
 
 
 
 <!-- ***********************************************************-->
-## Step 2 - Programmer 2 enables GitHub pages and reports 2 issues
+## Step 2 - Programmer 2 reports 2 issues
 
-1. Programmer 2 goes into repository settings and enables [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/). This will enable you to see your changes on live website.
-
-  <img src="images/github-pages-settings.png" width="500" height="auto" alt="github pages settings">
-
-2. Programmer 2 goes into repository settings and makes sure that the [issues](https://guides.github.com/features/issues/) feature is enabled.
-
-  <img src="images/issues-checkbox.png" width="500" height="auto" alt="issues checkbox">
-
-3. Programmer 2 creates the following two [issues](https://help.github.com/articles/creating-an-issue/):
+1. Programmer 2 creates the following two [issues](https://help.github.com/articles/creating-an-issue/):
 
   `Fix spelling typo in <h1> heading`
 

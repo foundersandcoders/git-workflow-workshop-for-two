@@ -2,9 +2,13 @@
 
 Contributions to this repo are welcome :heart:
 
-If you would like to improve the workshop please fork this repository, make the changes and open a pull request.
+The quickest way to improve this repo is to raise a new issue and tag the maintainer. You can find the maintainer of this repo at the top of the `README.md` file.
 
-Bellow is a summary of this process:
+Thank you :clap:
+
+Also, please feel free to improve this workshop by forking this repository, making the changes and opening a pull request.
+
+Below is a summary of this process:
 
 - Click the “Fork” button at the top right. You’ll now have your own copy of that repository in your GitHub account.
 

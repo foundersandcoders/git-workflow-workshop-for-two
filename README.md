@@ -1,3 +1,6 @@
+**Author**: [@PiotrBerebecki](https://github.com/PiotrBerebecki)  
+**Maintainer**: [@PiotrBerebecki](https://github.com/PiotrBerebecki)
+
 # Git Workflow Workshop for Two Programmers 💻 💻
 
 

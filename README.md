@@ -243,25 +243,25 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   $ git checkout master
   ```
 
-1. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
+2. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
 
   ```sh
   $ git pull origin master
   ```
 
-1. Programmer 2 switches back to the `update-class-heading` branch.
+3. Programmer 2 switches back to the `update-class-heading` branch.
 
   ```sh
   $ git checkout update-class-heading
   ```
 
-1. Programmer 2 tries to merge `master` branch into `update-class-heading` branch.
+4. Programmer 2 tries to merge `master` branch into `update-class-heading` branch.
 
   ```sh
   $ git merge master
   ```
 
-1. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
+5. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
 
   ```html
   <body>
@@ -275,7 +275,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   </body>
   ```
 
-1. Programmer 1 removes HEAD and master markers and leaves only one line with `<h1>` heading so that both issues are addressed.
+6. Programmer 2 removes HEAD and master markers and leaves only one line with `<h1>` heading so that both issues are addressed.
 
   ```html
   <body>
@@ -285,7 +285,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   </body>
   ```
 
-1. Programmer 1 adds the `index.html` file to staging area and commits the changes occurred during the merge conflict.
+7. Programmer 2 adds the `index.html` file to staging area and commits the changes occurred during the merge conflict.
 
   ```sh
   # First add to staging area

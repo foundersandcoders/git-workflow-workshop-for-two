@@ -179,13 +179,9 @@ When you apply the two changes above the heading will look like this:
 <img src="images/heading-after.png" width="500" height="auto" alt="git workflow workshop heading with css style">
 
 
-You decide that one of you **(Programmer 1) will resolve issue number 1** while the other person **(Programmer 2) will resolve issue number 2**.
+You decide that one of you **(Programmer 1) will resolve issue number 1** while the other person **(Programmer 2) will resolve issue number 2**. When you begin working on your weekly projects, you will always be pairing. So programmer 1 represents "pair 1" and programmer 2 represents "pair 2".
 
 **Note: Only one line in the `index.html` file needs to be modified.**
-
-
-
-
 
 
 <!-- ***********************************************************-->

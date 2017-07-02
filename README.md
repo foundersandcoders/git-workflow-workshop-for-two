@@ -22,7 +22,7 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 
 
 <!-- ***********************************************************-->
-## OK, let's start :rocket:
+# Initial setup :rocket:
 
 You're working in a team of two on a project for a new client.
 
@@ -66,9 +66,103 @@ For the sake of this exercise, we're just going to add one issue at the moment. 
 
 There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` branch is always be deployable. In this flow, each branch is used for a separate feature.
 
+1. Create a branch with a unique and descriptive name. For example, `create-heading-with-shadow`.
+
+```sh
+$ git branch create-heading-with-shadow
+```
+
+2. Leave the master branch by switching to the new branch you have just created.
+
+```sh
+$ git checkout create-heading-with-shadow
+```
+
+<!-- ***********************************************************-->
+## Step 4 - Write enough HTML & CSS to satisfy the requirements
+
+1. Add the following code into a file called `index.html`.
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Git Workflow Workshop</title>
+    </head>
+
+    <body>
+
+        <h1 class="some-heading">GIT WORKFLOW WORKSHOW</h1>
+
+    </body>
+
+    </html>
+    ```
+
+2. Create a new file called `style.css` which contains:
+    ```css
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-heading {
+      box-sizing: border-box;
+      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+      font-size: 3.5rem;
+      padding: 5rem 3rem;
+      text-align: center;
+      text-rendering: optimizeLegibility;
+      color: #131313;
+      background-color: #e7e5e4;
+      letter-spacing: .15em;
+      text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #bcbbba, -19px 38px 1px #c1bfbf, -20px 40px 1px #c6c4c4, -21px 42px 1px #cbc9c8, -22px 44px 1px #cfcdcd, -23px 46px 1px #d4d2d1, -24px 48px 1px #d8d6d5, -25px 50px 1px #dbdad9, -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2;
+    }
+    ```
 
 
 <!-- ***********************************************************-->
+## Step 5 - Add the new files to the staging area
+
+1. Add `index.html` and `style.css` to the [staging area](http://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git).
+
+  ```sh
+  $ git add index.html style.css
+  ```
+
+
+<!-- ***********************************************************-->
+## Step 6 - Commit your changes
+
+The history of a project is made up of ["commits"](http://stackoverflow.com/questions/27˜Ω45076/what-are-the-differences-between-git-commit-and-git-push). Each commit is a snapshot of your whole repository at one particular time.
+
+1. Commit the files that are in the staging area.
+
+  Before closing the commit message with a quote symbol you can press enter on your keyboard to continue typing in the new terminal line. The text in the second line can be used as an additional message.
+
+  It is a good practice to link your commit to an existing issue by typing  `Relates #1`. Thanks to using the hash symbol followed by the relevant issue number your commit will be [automatically linked to an existing issue](https://help.github.com/articles/autolinked-references-and-urls/).
+
+  ```sh
+  $ git commit -m 'add git workshop heading & shadow styling
+  > Relates #1'
+  ```
+
+
+<!-- ***********************************************************-->
+## Step 7 - Push your local version up to GitHub
+
+1. [Push](https://help.github.com/articles/pushing-to-a-remote/) the `create-heading-with-shadow` branch up to the "origin" i.e. the GitHub repo that you cloned from.
+
+  ```sh
+  $ git push origin create-heading-with-shadow
+  ```
+
+
+<!-- ***********************************************************-->
+# Splitting the work
 Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
 
 There are two issues that when resolved will make the heading look really nice:

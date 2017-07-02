@@ -24,6 +24,44 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 <!-- ***********************************************************-->
 ## OK, let's start :rocket:
 
+You're working in a team of two on a project for a new client.
+
+## Step 1 - Create a new GitHub repo and clone it
+
+1. Go to your cohort's GitHub organiation and create a new repo, initialising it with a `README.md`.
+
+2. [Clone](https://help.github.com/articles/cloning-a-repository/) this new repository using your terminal.
+
+  <img src="images/clone-repository-dialog.png" width="500" height="auto" alt="clone repository dialog">
+
+  ```sh
+  $ git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
+  ```
+
+3. Move into the newly created directory.
+
+  ```sh
+  $ cd git-workflow-workshop-for-two
+  ```
+
+
+
+  <!-- ***********************************************************-->
+## Step 2 - Raise your issues on the work to be done
+
+Normally, you would decide on which "features" you were going to build and then break these down into smaller issues before starting the work.
+
+For the sake of this exercise, we're just going to add one issue at the moment. Your client wants a beautifully styled heading for the homepage. It should be simple, bold, black writing with a background shadow that makes it stand out.
+
+1. Raise an new issue with a descriptive title.
+
+2. In the body of the issue, provide more detail about how to complete the work.
+
+3. Assign yourselves to this issue.
+
+
+
+<!-- ***********************************************************-->
 Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
 
 There are two issues that when resolved will make the heading look really nice:
@@ -46,56 +84,6 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 
-<!-- ***********************************************************-->
-## Step 1 - Programmer 1 forks this repository and adds Programmer 2 as a collaborator
-
-1. Programmer 1 [forks](https://help.github.com/articles/fork-a-repo/) this repository.
-
-  <img src="images/fork-button.jpeg" width="500" height="auto" alt="fork button">
-
-2. Programmer 1 goes into settings of the newly forked repository and adds Programmer 2 as a [collaborator](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/).
-
-  <img src="images/collaborator-settings.png" width="500" height="auto" alt="collaborator settings">
-
-3. Programmer 2 accepts the invitation to the new repository via their email.
-
-
-
-<!-- ***********************************************************-->
-## Step 2 - Programmer 2 enables GitHub pages and reports 2 issues
-
-1. Programmer 2 goes into repository settings and enables [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/). This will enable you to see your changes on live website.
-
-  <img src="images/github-pages-settings.png" width="500" height="auto" alt="github pages settings">
-
-2. Programmer 2 goes into repository settings and makes sure that the [issues](https://guides.github.com/features/issues/) feature is enabled.
-
-  <img src="images/issues-checkbox.png" width="500" height="auto" alt="issues checkbox">
-
-3. Programmer 2 creates the following two [issues](https://help.github.com/articles/creating-an-issue/):
-
-  `Fix spelling typo in <h1> heading`
-
-  `Correct the class name of <h1> heading to match the existing class name in the css file`
-
-
-
-<!-- ***********************************************************-->
-## Step 3 - Both programmers clone the forked repository
-
-1. Both programmers [clone](https://help.github.com/articles/cloning-a-repository/) the forked repository using their terminal.
-
-  <img src="images/clone-repository-dialog.png" width="500" height="auto" alt="clone repository dialog">
-
-  ```sh
-  $ git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
-  ```
-
-2. Both programmers navigate to the newly created directory.
-
-  ```sh
-  $ cd git-workflow-workshop-for-two
-  ```
 
 
 

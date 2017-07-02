@@ -62,6 +62,13 @@ For the sake of this exercise, we're just going to add one issue at the moment. 
 
 
 <!-- ***********************************************************-->
+## Step 3 - Create and move to a new branch
+
+There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` branch is always be deployable. In this flow, each branch is used for a separate feature.
+
+
+
+<!-- ***********************************************************-->
 Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
 
 There are two issues that when resolved will make the heading look really nice:

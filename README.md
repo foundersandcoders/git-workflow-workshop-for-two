@@ -192,7 +192,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 <!-- ***********************************************************-->
 ## Step 1 - Programmer 2 clones the repo
 
-1. Programme 2 creates their own local version
+1. Make sure both teammates have a cloned, so you each have a local version on your own computer
 
     ```sh
     $ git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
@@ -203,11 +203,11 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 <!-- ***********************************************************-->
 ## Step 2 - Raise these 2 new issues
 
-1. Create the following two issues:
+1. Create the following two issues and assign each one to a different person
 
-  `Fix spelling typo in <h1> heading`
+    + `Fix spelling typo in <h1> heading` (Programmer 1)
 
-  `Correct the class name of <h1> heading to match the existing class name in the css file`
+    + `Correct the class name of <h1> heading to match the existing class name in the css file` (Programmer 2)
 
 
 <!-- ***********************************************************-->
@@ -233,6 +233,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   $ git checkout update-class-heading
   ```
 
+Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-name>`.
 
 
 <!-- ***********************************************************-->

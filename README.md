@@ -213,7 +213,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 1 - Programmer 2 clones the repo
+## Step 10 - Programmer 2 clones the repo
 
 1. Make sure both teammates have a cloned, so you each have a local version on your own computer
 
@@ -224,7 +224,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 2 - Raise these 2 new issues
+## Step 11 - Raise these 2 new issues
 
 1. Create the following two issues and assign each one to a different person
 
@@ -234,7 +234,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 3 - Both programmers create one branch each and switch to them
+## Step 12 - Both programmers create one branch each and switch to them
 
 1. Both programmers create one branch each: `fix-typo-heading` (Programmer 1) and `update-class-heading` (Programmer 2).
 
@@ -260,7 +260,7 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 
 
 <!-- ***********************************************************-->
-## Step 4 - Both programmers open their `index.html` files and make one requested change each
+## Step 13 - Both programmers open their `index.html` files and make one requested change each
 
 1. **Programmer 1 fixes only the spelling typo** in the heading (WORKSHOW -> WORKSHOP). Please do not update the class name. This is dealt with by Programmer 2.
 
@@ -277,7 +277,7 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 
 
 <!-- ***********************************************************-->
-## Step 5 - Both programmers save their `index.html` files and check status
+## Step 14 - Both programmers save their `index.html` files and check status
 
 1. Both programmers save their `index.html` files.
 
@@ -290,7 +290,7 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 
 
 <!-- ***********************************************************-->
-## Step 6 - Both programmers add the modified `index.html` file to the staging area
+## Step 15 - Both programmers add the modified `index.html` file to the staging area
 
 1. Both programmers add their modified `index.html` files to the staging area.
 
@@ -301,7 +301,7 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 
 
 <!-- ***********************************************************-->
-## Step 7 - Both programmers commit their changes
+## Step 16 - Both programmers commit their changes
 1. Both programmers commit the changes. Don't forget the multi-line commit message with the referenced issue.
 
   ```sh
@@ -317,7 +317,7 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 
 
 <!-- ***********************************************************-->
-## Step 8 - Programmer 1 switches to `master` branch and pulls down the remote `master` branch
+## Step 17 - Programmer 1 switches to `master` branch and pulls down the remote `master` branch
 We have so many programmers working on this project now, who knows what changes may have happened to the `master` branch since the last time we looked at the remote version that's on GitHub?
 
 1. Programmer 1 switches to `master` branch.
@@ -341,7 +341,7 @@ We have so many programmers working on this project now, who knows what changes 
 
 
 <!-- ***********************************************************-->
-## Step 9 - Programmer 1 pushes `fix-typo-heading` branch to remote
+## Step 18 - Programmer 1 pushes `fix-typo-heading` branch to remote
 
 1. Programmer 1 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `fix-typo-heading` branch to remote
 
@@ -352,7 +352,7 @@ We have so many programmers working on this project now, who knows what changes 
 
 
 <!-- ***********************************************************-->
-## Step 10 - Programmer 1 creates a pull request
+## Step 19 - Programmer 1 creates a pull request
 
 1. Programmer 1 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request).
 
@@ -365,7 +365,7 @@ We have so many programmers working on this project now, who knows what changes 
 
 
 <!-- ***********************************************************-->
-## Step 11 - Programmer 2 reviews the pull request
+## Step 20 - Programmer 2 reviews the pull request
 
 Programmer 2 [reviews the pull request](https://help.github.com/articles/about-pull-request-reviews/)
 
@@ -381,7 +381,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 
 <!-- ***********************************************************-->
-## Step 12 - Programmer 2 merges the pull request :+1:
+## Step 21 - Programmer 2 merges the pull request :+1:
 
 1. Programmer 2 [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 
@@ -392,7 +392,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 
 <!-- ***********************************************************-->
-## Step 13 - Programmer 2 switches to `master` branch, pulls the remote `master` branch, tries to merge it into `update-class-heading` branch and :collision: resolves merge conflicts :collision:
+## Step 22 - Programmer 2 switches to `master` branch, pulls the remote `master` branch, tries to merge it into `update-class-heading` branch and :collision: resolves merge conflicts :collision:
 
 1. Programmer 2 switches to `master` branch.
 
@@ -456,7 +456,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 
 <!-- ***********************************************************-->
-## Step 14 - Programmer 2 pushes `update-class-heading` branch to remote
+## Step 23 - Programmer 2 pushes `update-class-heading` branch to remote
 
 1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote.
 
@@ -467,14 +467,14 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 
 <!-- ***********************************************************-->
-## Step 15 - Programmer 2 creates a pull request
+## Step 24 - Programmer 2 creates a pull request
 
 1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
 
 
 <!-- ***********************************************************-->
-## Step 16 - Programmer 1 merges the pull request :+1:
+## Step 25 - Programmer 1 merges the pull request :+1:
 
 1. Programmer 1 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 

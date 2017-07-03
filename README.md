@@ -1,3 +1,6 @@
+**Author**: [@PiotrBerebecki](https://github.com/PiotrBerebecki)  
+**Maintainer**: [@PiotrBerebecki](https://github.com/PiotrBerebecki)
+
 # Git Workflow Workshop for Two Programmers 💻 💻
 
 
@@ -58,6 +61,7 @@ For the sake of this exercise, we're just going to [add one issue](https://help.
 2. In the body of the issue, provide more detail about how to complete the work.
 
 3. Assign yourselves to this issue.
+
 
 
 
@@ -122,6 +126,7 @@ $ git checkout create-heading-with-shadow
       text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #bcbbba, -19px 38px 1px #c1bfbf, -20px 40px 1px #c6c4c4, -21px 42px 1px #cbc9c8, -22px 44px 1px #cfcdcd, -23px 46px 1px #d4d2d1, -24px 48px 1px #d8d6d5, -25px 50px 1px #dbdad9, -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2;
     }
     ```
+
 
 
 <!-- ***********************************************************-->
@@ -271,7 +276,6 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 <!-- ***********************************************************-->
 ## Step 7 - Both programmers commit their changes
-
 1. Both programmers commit the changes. Don't forget the multi-line commit message with the referenced issue.
 
   ```sh
@@ -370,25 +374,25 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
   $ git checkout master
   ```
 
-1. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
+2. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
 
   ```sh
   $ git pull origin master
   ```
 
-1. Programmer 2 switches back to the `update-class-heading` branch.
+3. Programmer 2 switches back to the `update-class-heading` branch.
 
   ```sh
   $ git checkout update-class-heading
   ```
 
-1. Programmer 2 tries to merge `master` branch into `update-class-heading` branch.
+4. Programmer 2 tries to merge `master` branch into `update-class-heading` branch.
 
   ```sh
   $ git merge master
   ```
 
-1. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
+5. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
 
   ```html
   <body>
@@ -402,7 +406,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
   </body>
   ```
 
-1. Programmer 1 removes HEAD and master markers and leaves only one line with `<h1>` heading so that both issues are addressed.
+6. Programmer 2 removes HEAD and master markers and leaves only one line with `<h1>` heading so that both issues are addressed.
 
   ```html
   <body>
@@ -412,7 +416,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
   </body>
   ```
 
-1. Programmer 1 adds the `index.html` file to staging area and commits the changes occurred during the merge conflict.
+7. Programmer 2 adds the `index.html` file to staging area and commits the changes occurred during the merge conflict.
 
   ```sh
   # First add to staging area
@@ -426,7 +430,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 
 <!-- ***********************************************************-->
-## Step 15 - Programmer 2 pushes `update-class-heading` branch to remote
+## Step 14 - Programmer 2 pushes `update-class-heading` branch to remote
 
 1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote.
 
@@ -437,14 +441,14 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 
 <!-- ***********************************************************-->
-## Step 16 - Programmer 2 creates a pull request
+## Step 15 - Programmer 2 creates a pull request
 
 1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
 
 
 <!-- ***********************************************************-->
-## Step 17 - Programmer 1 merges the pull request :+1:
+## Step 16 - Programmer 1 merges the pull request :+1:
 
 1. Programmer 1 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 
@@ -456,3 +460,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 <!-- ***********************************************************-->
 ## That's it 😄 Thank you for checking out the 'Git Workflow Workshop for Two Programmers' :clap:
+
+**Note**: This workshop introduces you to the idea of forking a repository. This is very useful when wanting to contribute to existing open source projects 💯
+
+However, forking is not required when starting a new repository under `foundersandcoders` or `FAC-X` organisations. All your fellow students will be automatically added as contributors.

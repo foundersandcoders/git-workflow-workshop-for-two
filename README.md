@@ -256,7 +256,9 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 <!-- ***********************************************************-->
 ## Step 5 - Both programmers save their `index.html` files and check status
 
-1. Both programmers save their `index.html` files and check the [status](https://git-scm.com/docs/git-status) to confirm that the file has been modified.
+1. Both programmers save their `index.html` files.
+
+2. Both programmers check the [status](https://git-scm.com/docs/git-status) of their files, to confirm that `index.html` has been modified.
 
   ```sh
   $ git status

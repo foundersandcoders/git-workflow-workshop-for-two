@@ -303,7 +303,7 @@ We have so many programmers working on this project now, who knows what changes 
   $ git checkout master
   ```
 
-1. Programmer 1 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally. There should be no changes since none of you have pushed any changes to the remote yet. It is a good practice to regularly check for changes on the remote before pushing your local changes.
+1. Programmer 1 [pulls](https://git-scm.com/docs/git-pull) the `master` branch from the remote (GitHub repo) to make sure that the local version of `master` is up to date with the remote (GitHub) version of `master`. (There should be no changes since neither of you has pushed any changes to the remote yet.) It is a good practice to regularly check for changes on the remote before pushing your local changes.
 
   ```sh
   $ git pull origin master

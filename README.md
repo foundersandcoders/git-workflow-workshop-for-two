@@ -51,7 +51,7 @@ You're working in a team of two on a project for a new client.
 
 Normally, you would decide on which "features" you were going to build and then break these down into smaller issues before starting the work.
 
-For the sake of this exercise, we're just going to add one issue at the moment. Your client wants a beautifully styled heading for the homepage. It should be simple, bold, black writing with a background shadow that makes it stand out.
+For the sake of this exercise, we're just going to [add one issue](https://help.github.com/articles/creating-an-issue/) at the moment. Your client wants a beautifully styled heading for the homepage. It should be simple, bold, black writing with a background shadow that makes it stand out.
 
 1. Raise an new issue with a descriptive title.
 
@@ -64,7 +64,7 @@ For the sake of this exercise, we're just going to add one issue at the moment. 
 <!-- ***********************************************************-->
 ## Step 3 - Create and move to a new branch
 
-There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` branch is always be deployable. In this flow, each branch is used for a separate feature.
+There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` [branch](](https://help.github.com/articles/about-branches/)) is always be deployable. In this flow, each branch is used for a separate feature.
 
 1. Create a branch with a unique and descriptive name. For example, `create-heading-with-shadow`.
 
@@ -185,9 +185,30 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 4 - Both programmers create one branch each and switch to them
+## Step 1 - Programmer 2 clones the repo
 
-1. Both programmers create one [branch](https://help.github.com/articles/about-branches/) each. Unique and descriptive branch names work best, for example, `fix-typo-heading` (Programmer 1) and `update-class-heading` (Programmer 2).
+1. Programme 2 creates their own local version
+
+    ```sh
+    $ git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
+    ```
+
+
+
+<!-- ***********************************************************-->
+## Step 2 - Raise these 2 new issues
+
+1. Create the following two issues:
+
+  `Fix spelling typo in <h1> heading`
+
+  `Correct the class name of <h1> heading to match the existing class name in the css file`
+
+
+<!-- ***********************************************************-->
+## Step 3 - Both programmers create one branch each and switch to them
+
+1. Both programmers create one branch each: `fix-typo-heading` (Programmer 1) and `update-class-heading` (Programmer 2).
 
   ```sh
   # Programmer 1:
@@ -210,7 +231,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 5 - Both programmers open their `index.html` files and make one requested change each
+## Step 4 - Both programmers open their `index.html` files and make one requested change each
 
 1. **Programmer 1 fixes only the spelling typo** in the heading (WORKSHOW -> WORKSHOP). Please do not update the class name. This is dealt with by Programmer 2.
 
@@ -227,7 +248,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 6 - Both programmers save their `index.html` files and check status
+## Step 5 - Both programmers save their `index.html` files and check status
 
 1. Both programmers save their `index.html` files and check the [status](https://git-scm.com/docs/git-status) to confirm that the file has been modified.
 
@@ -238,9 +259,9 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 7 - Both programmers add the modified `index.html` file to the staging area
+## Step 6 - Both programmers add the modified `index.html` file to the staging area
 
-1. Both programmers add their modified `index.html` files to the [staging area](http://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git).
+1. Both programmers add their modified `index.html` files to the staging area.
 
   ```sh
   $ git add index.html
@@ -249,24 +270,25 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 8 - Both programmers commit their changes
+## Step 7 - Both programmers commit their changes
 
-1. Both programmers [commit](http://stackoverflow.com/questions/27˜Ω45076/what-are-the-differences-between-git-commit-and-git-push) the changes. Before closing the commit message with a quote symbol you can press enter on your keyboard to continue typing in the new terminal line. The text in the second line can be used as an additional message. It is a good practice to link your commit to an existing issue by typing  `Relates #1`. Thanks to using the hash symbol followed by the relevant issue number your commit will be [automatically linked to an existing issue](https://help.github.com/articles/autolinked-references-and-urls/).
+1. Both programmers commit the changes. Don't forget the multi-line commit message with the referenced issue.
 
   ```sh
   # Programmer 1:
   $ git commit -m 'Fix typo in page heading
-  > Relates #1'
+  > Relates #<issue number>'
 
   # Programmer 2:
   $ git commit -m 'Update class name in heading
-  > Relates #2'
+  > Relates #<issue number>'
   ```
 
 
 
 <!-- ***********************************************************-->
-## Step 9 - Programmer 1 switches to `master` branch and pulls remote `master` branch
+## Step 8 - Programmer 1 switches to `master` branch and pulls down the remote `master` branch
+We have so many programmers working on this project now, who knows what changes may have happened to the `master` branch since the last time we looked at the remote version that's on GitHub?
 
 1. Programmer 1 switches to `master` branch.
 
@@ -289,7 +311,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 10 - Programmer 1 pushes `fix-typo-heading` branch to remote
+## Step 9 - Programmer 1 pushes `fix-typo-heading` branch to remote
 
 1. Programmer 1 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `fix-typo-heading` branch to remote
 
@@ -300,18 +322,38 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
 
 <!-- ***********************************************************-->
-## Step 11 - Programmer 1 creates a pull request
+## Step 10 - Programmer 1 creates a pull request
 
-1. Programmer 1 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `fix-typo-heading` as a head branch. Please add a descriptive title (e.g. `Fix the spelling mistake in page heading`) and leave a comment linking the pull request with the issue `#1`. Please also select Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+1. Programmer 1 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request).
 
-  <img src="images/pull-request-open.png" width="500" height="auto" alt="open pull request page">
+    + Add a descriptive title (e.g. `Fix the spelling mistake in page heading`) and leave a comment linking the pull request to the issue.
+
+    + Select Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+
+    <img src="images/pull-request-open.png" width="500" height="auto" alt="open pull request page">
+
+
+
+<!-- ***********************************************************-->
+## Step 11 - Programmer 2 reviews the pull request
+
+Programmer 2 [reviews the pull request](https://help.github.com/articles/about-pull-request-reviews/)
+
+1. Step through the each commit (in this case one)
+
+2. Check the "Files changed" tab for a line-by-line breakdown.
+
+2. Click "Review changes" and choose:
+    + "Comment"
+    + "Approve"
+    + "Request changes"
 
 
 
 <!-- ***********************************************************-->
 ## Step 12 - Programmer 2 merges the pull request :+1:
 
-1. Programmer 2 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
+1. Programmer 2 [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 
   <img src="images/pull-request-tab.png" width="500" height="auto" alt="pull request tab button">
 
@@ -378,7 +420,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
   # Then commit changes
   $ git commit -m 'Fix merge conflict
-  > Relates #1 and #2'
+  > Relates #<issue number> and #<issue number>'
   ```
 
 
@@ -397,7 +439,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 <!-- ***********************************************************-->
 ## Step 16 - Programmer 2 creates a pull request
 
-1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#2`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
 
 

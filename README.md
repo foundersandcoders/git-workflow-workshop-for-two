@@ -167,6 +167,29 @@ The history of a project is made up of ["commits"](http://stackoverflow.com/ques
 
 
 <!-- ***********************************************************-->
+## Step 8 - Create a pull request
+
+1. Programmer 1 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request).
+
+    + Add a descriptive title (e.g. `Fix the spelling mistake in page heading`) and leave a comment linking the pull request to the issue.
+
+    + Select Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+
+    <img src="images/pull-request-open.png" width="500" height="auto" alt="open pull request page">
+
+
+
+<!-- ***********************************************************-->
+## Step 9 - Programmer 2 merges the pull request :+1:
+You should never merge your own pull requests. A PR gives the rest of your team the chance to review before your changes are merged into `master`. In your projects, you will be asking the other pair to do this.
+
+1. Programmer 2 reviews the changes and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
+
+  <img src="images/pull-request-tab.png" width="500" height="auto" alt="pull request tab button">    
+
+
+
+<!-- ***********************************************************-->
 # Splitting the work
 Your client has just called you and asked to improve heading on their [company website](https://piotrberebecki.github.io/git-workflow-workshop-for-two/).
 

@@ -68,7 +68,7 @@ For the sake of this exercise, we're just going to [add one issue](https://help.
 <!-- ***********************************************************-->
 ## Step 3 - Create and move to a new branch
 
-There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` [branch](](https://help.github.com/articles/about-branches/)) is always be deployable. In this flow, each branch is used for a separate feature.
+There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` [branch](](https://help.github.com/articles/about-branches/)) is always deployable. In this flow, each branch is used for a separate feature.
 
 1. Create a branch with a unique and descriptive name. For example, `create-heading-with-shadow`.
 

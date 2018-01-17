@@ -31,7 +31,7 @@ You're working in a team of two on a project for a new client.
 
 ## Step 1 - Create a new GitHub repo and clone it
 
-1. Go to your cohort's GitHub organiation and create a new repo, initialising it with a `README.md`.
+1. Go to your cohort's GitHub organisation and create a new repo, initialising it with a `README.md`.
 
 2. [Clone](https://help.github.com/articles/cloning-a-repository/) this new repository using your terminal.
 
@@ -56,7 +56,7 @@ Normally, you would decide on which "features" you were going to build and then 
 
 For the sake of this exercise, we're just going to [add one issue](https://help.github.com/articles/creating-an-issue/) at the moment. Your client wants a beautifully styled heading for the homepage. It should be simple, bold, black writing with a background shadow that makes it stand out.
 
-1. Raise an new issue with a descriptive title.
+1. Raise a new issue with a descriptive title.
 
 2. In the body of the issue, provide more detail about how to complete the work.
 
@@ -369,7 +369,7 @@ We have so many programmers working on this project now, who knows what changes 
 
 Programmer 2 [reviews the pull request](https://help.github.com/articles/about-pull-request-reviews/)
 
-1. Step through the each commit (in this case one)
+1. Step through each commit (in this case one)
 
 2. Check the "Files changed" tab for a line-by-line breakdown.
 

@@ -193,7 +193,7 @@ You should never merge your own pull requests. A PR gives the rest of your team 
   <img src="images/pull-request-tab.png" width="500" height="auto" alt="pull request tab button">    
 
 Now your remote repo looks like this: </br>
-<img src="images/step7GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
+<img src="images/step9GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 
 <!-- ***********************************************************-->

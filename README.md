@@ -84,6 +84,7 @@ $ git checkout create-heading-with-shadow
 ```
 </br>
 <img src="images/step3(2)GitFlow.png" width="300" height="auto" alt="repo visual after step 1">
+
 <!-- ***********************************************************-->
 ## Step 4 - Write enough HTML & CSS to satisfy the requirements
 

@@ -46,8 +46,8 @@ You're working in a team of two on a project for a new client.
   ```sh
   $ cd git-workflow-workshop-for-two
   ```
-
-
+This is what your remote and local repositories look like after this. HEAD is a reference to your current location.</br>
+<img src="images/step1GitFlow.png" width="350" height="auto" alt="repo visual after step 1">
 
   <!-- ***********************************************************-->
 ## Step 2 - Raise your issues on the work to be done
@@ -75,12 +75,15 @@ There are many types of workflow. At FAC, we use [the GitHub flow](https://guide
 ```sh
 $ git branch create-heading-with-shadow
 ```
-
+</br>
+<img src="images/step3(1)GitFlow.png" width="300" height="auto" alt="repo visual after step 1">
 2. Leave the master branch by switching to the new branch you have just created.
 
 ```sh
 $ git checkout create-heading-with-shadow
 ```
+</br>
+<img src="images/step3(2)GitFlow.png" width="300" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
 ## Step 4 - Write enough HTML & CSS to satisfy the requirements
@@ -137,7 +140,7 @@ $ git checkout create-heading-with-shadow
   ```sh
   $ git add index.html style.css
   ```
-
+<img src="images/step5GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
 ## Step 6 - Commit your changes
@@ -154,10 +157,12 @@ The history of a project is made up of ["commits"](http://stackoverflow.com/ques
   $ git commit -m 'add git workshop heading & shadow styling
   > Relates #1'
   ```
-
+<img src="images/step6GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
 ## Step 7 - Push your local version up to GitHub
+
+At this point, your remote repo looks exactly the same as at the beginning. You need to push your changes.
 
 1. [Push](https://help.github.com/articles/pushing-to-a-remote/) the `create-heading-with-shadow` branch up to the "origin" i.e. the GitHub repo that you cloned from.
 
@@ -165,6 +170,7 @@ The history of a project is made up of ["commits"](http://stackoverflow.com/ques
   $ git push origin create-heading-with-shadow
   ```
 
+<img src="images/step7GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
 ## Step 8 - Create a pull request
@@ -187,6 +193,8 @@ You should never merge your own pull requests. A PR gives the rest of your team 
 
   <img src="images/pull-request-tab.png" width="500" height="auto" alt="pull request tab button">    
 
+Now your remote repo looks like this: </br>
+<img src="images/step9GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 
 <!-- ***********************************************************-->
@@ -256,8 +264,8 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   $ git checkout update-class-heading
   ```
 
-Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-name>`.
-
+Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-name>`.</br>
+<img src="images/2step3GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
 ## Step 4 - Both programmers open their `index.html` files and make one requested change each
@@ -314,7 +322,7 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
   > Relates #<issue number>'
   ```
 
-
+<img src="images/2step7GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
 ## Step 8 - Programmer 1 switches to `master` branch and pulls down the remote `master` branch
@@ -349,7 +357,7 @@ We have so many programmers working on this project now, who knows what changes 
   $ git push origin fix-typo-heading
   ```
 
-
+<img src="images/2step9GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
 ## Step 10 - Programmer 1 creates a pull request
@@ -387,8 +395,9 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
   <img src="images/pull-request-tab.png" width="500" height="auto" alt="pull request tab button">
 
-2. Programmer 2 opens the live website on GitHub pages to double check that the spelling mistake has been corrected. The URL typically has the following format: https://ENTER-YOUR-USERNAME-HERE.github.io/git-workflow-workshop-for-two/
+2. Programmer 2 opens the live website on GitHub pages to double check that the spelling mistake has been corrected. Go to the repository settings on Github and scroll down until you find Github Pages title. Select the master branch as the source and save, and you'll then see the URL where the live website is. 
 
+<img src="images/2step12GitFlow.png" width="250" height="auto" alt="repo visual after step 1">
 
 
 <!-- ***********************************************************-->
@@ -405,6 +414,8 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
   ```sh
   $ git pull origin master
   ```
+
+  <img src="images/2step13(1)GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 3. Programmer 2 switches back to the `update-class-heading` branch.
 
@@ -453,7 +464,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
   > Relates #<issue number> and #<issue number>'
   ```
 
-
+<img src="images/2step13(2)GitFlow.png" width="250" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
 ## Step 14 - Programmer 2 pushes `update-class-heading` branch to remote
@@ -464,6 +475,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
     $ git push origin update-class-heading
   ```
 
+<img src="images/2step14GitFlow.png" width="250" height="auto" alt="repo visual after step 1">
 
 
 <!-- ***********************************************************-->
@@ -477,6 +489,8 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 ## Step 16 - Programmer 1 merges the pull request :+1:
 
 1. Programmer 1 reviews and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
+
+<img src="images/2step16GitFlow.png" width="250" height="auto" alt="repo visual after step 1">
 
 2. Programmer 1 opens the live website on GitHub pages to double check the new heading style.
 

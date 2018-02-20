@@ -499,7 +499,10 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 
 <!-- ***********************************************************-->
-## That's it 😄 Thank you for checking out the 'Git Workflow Workshop for Two Programmers' :clap: A summary of the above commands and what they do can be found [here](/images/git-flow-summary-table.png) in a neat little table.
+## That's it 😄 Thank you for checking out the 'Git Workflow Workshop for Two Programmers' :clap:  
+
+***A summary of the above commands and what they do can be found [here](/images/git-flow-summary-table.png) in a neat little table.***
+
 
 **Note**: This workshop introduces you to the idea of forking a repository. This is very useful when wanting to contribute to existing open source projects 💯
 

@@ -423,7 +423,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
   ```sh
   $ git pull origin master
   ```
-it will appear this message in the terminal after pulling the `master`, that indicate that there's a confict in `index.html`
+it will appear this message in the terminal after pulling the `master`, that indicate that there's a conflict in `index.html`
 
   <img src="images/step13GitFlowC.png" width="500" height="auto" alt="confict after pull">
 
@@ -432,7 +432,7 @@ it will appear this message in the terminal after pulling the `master`, that ind
 
   <img src="images/step13GitFlowD.png" width="500" height="auto" alt="HEAD and master markers">
 
-6. Programmer 2 should review the incoming and the current changes to see what changes was made in the master and compare it with his current changes -(in the future projects, you can choose to accepts the changes in the master and discard your changes or vice versa or you can accept both of the changes, that depends on the current flow of the project and the discussion between you and your teammates in the project about these changes )- __for this exercise__ choose any option and edit it to leave only one line with `<h1>` heading so that both issues are addressed.
+6. Programmer 2 should review the incoming and the current changes to see what changes was made in the master and compare it with his current changes -(in the future projects, you can choose to accepts the changes in the master and discards your changes or vice versa or you can accept both of the changes, that depends on the current flow of the project and the discussion between you and your teammates in the project about these changes )- __for this exercise__ choose any option and edit it to leave only one line with `<h1>` heading so that both issues are addressed.
 
   ```html
   <body>
@@ -468,9 +468,13 @@ it will appear this message in the terminal after pulling the `master`, that ind
 
 
 <!-- ***********************************************************-->
-## Step 15 - Programmer 2 creates a pull request
+## Step 15 - Programmer 2 checks the pull request again
 
-1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+1. Programmer 2 navigates to the repository on GitHub.com and checks the [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) has now the abilty to merge with `master`, and has no conflicts.
+   
+   <img src="images/step15GitFlow.png" width="500" height="auto" alt="repo visual after step 1">
+
+2. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
 
 

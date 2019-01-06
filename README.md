@@ -472,7 +472,7 @@ it will appear this message in the terminal after pulling the `master`, that ind
 
 1. Programmer 2 navigates to the repository on GitHub.com and checks the [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) has now the abilty to merge with `master`, and has no conflicts.
    
-   <img src="images/step15GitFlow.png" width="500" height="auto" alt="repo visual after step 1">
+   <img src="images/step15GitFlow.png" width="500" height="auto" alt="no conflict pull request">
 
 2. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 

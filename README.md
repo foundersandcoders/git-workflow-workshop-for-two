@@ -456,7 +456,7 @@ it will appear this message in the terminal after pulling the `master`, that ind
 <img src="images/2step13(2)GitFlow.png" width="250" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
-## Step 14 - Programmer 2 pushes `update-class-heading` branch to remote
+## Step 14 - Programmer 2 pushes `update-class-heading` branch to remote again
 
 1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote.
 

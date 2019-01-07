@@ -401,38 +401,49 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
 
 <!-- ***********************************************************-->
-## Step 13 - Programmer 2 pushes `update-class-heading` branch to remote, makes pull request, sees conflict and :collision: resolves merge conflicts :collision:
+## Step 13 - Programmer 2 switches to `master` branch, pulls the remote `master` branch, tries to merge it into `update-class-heading` branch and :collision: resolves merge conflicts :collision:
 
-1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote
+1. Programmer 2 switches to `master` branch.
 
   ```sh
-  $ git push origin update-class-heading
+  $ git checkout master
   ```
 
-2. Programmer 2 tries to create a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request), and will face this message "Can't automatically merge. Don't worry you can still create the pull request."
-
-    <img src="images/step13GitFlowA.png" width="500" height="auto" alt="open pull request page">
-
-3. Programmer 2 clicks on **Create pull request**, and will see that this branch can't be merged because there conficts in the files, here the file is `index.html`
-
-    <img src="images/step13GitFlowB.png" width="500" height="auto" alt="conficting files">
-
-
-4. Programmer 2 now is on `update-class-heading` branch, so to resolve this conflict.
+2. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
 
   ```sh
   $ git pull origin master
   ```
-it will appear this message in the terminal after pulling the `master`, that indicate that there's a conflict in `index.html`
 
-  <img src="images/step13GitFlowC.png" width="500" height="auto" alt="confict after pull">
+  <img src="images/2step13(1)GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
+3. Programmer 2 switches back to the `update-class-heading` branch.
+
+  ```sh
+  $ git checkout update-class-heading
+  ```
+
+4. Programmer 2 tries to merge `master` branch into `update-class-heading` branch.
+
+  ```sh
+  $ git merge master
+  ```
 
 5. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
 
-  <img src="images/step13GitFlowD.png" width="500" height="auto" alt="HEAD and master markers">
+  ```html
+  <body>
 
-6. Programmer 2 should review the incoming and the current changes to see what changes was made in the master and compare it with his current changes -(in the future projects, you can choose to accepts the changes in the master and discards your changes or vice versa or you can accept both of the changes, that depends on the current flow of the project and the discussion between you and your teammates in the project about these changes )- __for this exercise__ choose any option and edit it to leave only one line with `<h1>` heading so that both issues are addressed.
+  <<<<<<< HEAD
+      <h1 class="page-heading">GIT WORKFLOW WORKSHOW</h1>
+  =======
+      <h1 class="some-heading">GIT WORKFLOW WORKSHOP</h1>
+  >>>>>>> master
+
+  </body>
+  ```
+
+6. Programmer 2 removes HEAD and master markers and leaves only one line with `<h1>` heading so that both issues are addressed.
 
   ```html
   <body>
@@ -456,7 +467,7 @@ it will appear this message in the terminal after pulling the `master`, that ind
 <img src="images/2step13(2)GitFlow.png" width="250" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
-## Step 14 - Programmer 2 pushes `update-class-heading` branch to remote again
+## Step 14 - Programmer 2 pushes `update-class-heading` branch to remote
 
 1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote.
 
@@ -468,13 +479,9 @@ it will appear this message in the terminal after pulling the `master`, that ind
 
 
 <!-- ***********************************************************-->
-## Step 15 - Programmer 2 checks the pull request again
+## Step 15 - Programmer 2 creates a pull request
 
-1. Programmer 2 navigates to the repository on GitHub.com and checks the [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) has now the abilty to merge with `master`, and has no conflicts.
-   
-   <img src="images/step15GitFlow.png" width="500" height="auto" alt="no conflict pull request">
-
-2. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
 
 

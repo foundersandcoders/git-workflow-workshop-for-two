@@ -27,9 +27,9 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 <!-- ***********************************************************-->
 # Initial setup :rocket:
 
-You're working in a team of two on a project for a new client.
+You're working in a team of two on a project for a new client. Steps 1 to 8 in this section should be completed by one of you, which we'll refer to as `Programmer 1`.
 
-## Step 1 - Create a new GitHub repo and clone it
+## Step 1 - Programmer 1 creates a new GitHub repo and clones it
 
 1. Go to your cohort's GitHub organisation and create a new repo, initialising it with a `README.md`.
 

@@ -504,6 +504,6 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 ***A summary of the above commands and what they do can be found [here](/images/git-flow-summary-table.png) in a neat little table.***
 
 
-**Note**: This workshop introduces you to the idea of forking a repository. This is very useful when wanting to contribute to existing open source projects 💯
+**Note**: This workshop does not introduce a very popular idea of forking a repository, which is very useful when wanting to contribute to existing open source projects 💯. Forking is not required when starting a new repository under `foundersandcoders` or `FAC-X` organisations since all your fellow students will be automatically added as contributors. 
 
-However, forking is not required when starting a new repository under `foundersandcoders` or `FAC-X` organisations. All your fellow students will be automatically added as contributors.
+Having said that, we recommend you read about forking to be able to contribute to open source projects. You can read more about it [here](https://help.github.com/en/articles/fork-a-repo). 

@@ -145,7 +145,7 @@ $ git checkout create-heading-with-shadow
 <!-- ***********************************************************-->
 ## Step 6 - Commit your changes
 
-The history of a project is made up of ["commits"](http://stackoverflow.com/questions/27˜Ω45076/what-are-the-differences-between-git-commit-and-git-push). Each commit is a snapshot of your whole repository at one particular time.
+The history of a project is made up of ["commits"](https://stackoverflow.com/questions/2745076/what-are-the-differences-between-git-commit-and-git-push). Each commit is a snapshot of your whole repository at one particular time.
 
 1. Commit the files that are in the staging area.
 

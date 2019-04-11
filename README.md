@@ -177,7 +177,7 @@ At this point, your remote repo looks exactly the same as at the beginning. You 
 
 1. Programmer 1 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request).
 
-    + Add a descriptive title (e.g. `Fix the spelling mistake in page heading`) and leave a comment linking the pull request to the issue.
+    + Add a descriptive title (e.g. `Create page heading`) and leave a comment linking the pull request to the issue.
 
     + Select Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 

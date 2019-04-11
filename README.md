@@ -44,7 +44,7 @@ You're working in a team of two on a project for a new client.
 3. Move into the newly created directory.
 
   ```sh
-  $ cd git-workflow-workshop-for-two
+  $ cd your-repo-name-here
   ```
 This is what your remote and local repositories look like after this. HEAD is a reference to your current location.</br>
 <img src="images/step1GitFlow.png" width="350" height="auto" alt="repo visual after step 1">

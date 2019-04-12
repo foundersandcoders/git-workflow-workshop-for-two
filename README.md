@@ -27,9 +27,9 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 <!-- ***********************************************************-->
 # Initial setup :rocket:
 
-You're working in a team of two on a project for a new client.
+You're working in a team of two on a project for a new client. Steps 1 to 8 in this section should be completed by one of you, which we'll refer to as `Programmer 1`.
 
-## Step 1 - Create a new GitHub repo and clone it
+## Step 1 - Programmer 1 creates a new GitHub repo and clones it
 
 1. Go to your cohort's GitHub organisation and create a new repo, initialising it with a `README.md`.
 
@@ -44,7 +44,7 @@ You're working in a team of two on a project for a new client.
 3. Move into the newly created directory.
 
   ```sh
-  $ cd git-workflow-workshop-for-two
+  $ cd your-repo-name-here
   ```
 This is what your remote and local repositories look like after this. HEAD is a reference to your current location.</br>
 <img src="images/step1GitFlow.png" width="350" height="auto" alt="repo visual after step 1">
@@ -145,7 +145,7 @@ $ git checkout create-heading-with-shadow
 <!-- ***********************************************************-->
 ## Step 6 - Commit your changes
 
-The history of a project is made up of ["commits"](http://stackoverflow.com/questions/27˜Ω45076/what-are-the-differences-between-git-commit-and-git-push). Each commit is a snapshot of your whole repository at one particular time.
+The history of a project is made up of ["commits"](https://stackoverflow.com/questions/2745076/what-are-the-differences-between-git-commit-and-git-push). Each commit is a snapshot of your whole repository at one particular time.
 
 1. Commit the files that are in the staging area.
 
@@ -177,7 +177,7 @@ At this point, your remote repo looks exactly the same as at the beginning. You 
 
 1. Programmer 1 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request).
 
-    + Add a descriptive title (e.g. `Fix the spelling mistake in page heading`) and leave a comment linking the pull request to the issue.
+    + Add a descriptive title (e.g. `Create page heading`) and leave a comment linking the pull request to the issue.
 
     + Select Programmer 2 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
@@ -504,6 +504,6 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 ***A summary of the above commands and what they do can be found [here](/images/git-flow-summary-table.png) in a neat little table.***
 
 
-**Note**: This workshop introduces you to the idea of forking a repository. This is very useful when wanting to contribute to existing open source projects 💯
+**Note**: This workshop does not introduce the very popular idea of forking a repository, which is very useful when wanting to contribute to existing open source projects 💯. Forking is not required when starting a new repository under `foundersandcoders` or `FAC-X` organisations since all your fellow students will be automatically added as contributors. 
 
-However, forking is not required when starting a new repository under `foundersandcoders` or `FAC-X` organisations. All your fellow students will be automatically added as contributors.
+Having said that, we recommend you read about forking to be able to contribute to open source projects. You can read more about it [here](https://help.github.com/en/articles/fork-a-repo). 

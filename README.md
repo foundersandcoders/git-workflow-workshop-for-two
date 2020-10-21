@@ -10,17 +10,17 @@
 
 An exercise to practice git workflow skills. The workshop should be undertaken by two programmers, working on two computers. The skills practiced include:
 
-- cloning a repository
-- creating branches
-- switching branches
-- adding changes to staging area
-- committing changes
-- pulling latest version from the remote master branch
-- merging master branch into recently created branch
-- resolving merge conflicts
-- pushing to remote repository
-- creating a pull request on GitHub
-- merging a pull request on GitHub
+- Cloning a repository.
+- Creating branches.
+- Switching branches.
+- Adding changes to staging area.
+- Committing changes.
+- Pulling latest version from the remote main branch.
+- Merging main branch into recently created branch.
+- Resolving merge conflicts.
+- Pushing to remote repository.
+- Creating a pull request on GitHub.
+- Merging a pull request on GitHub.
 
 
 
@@ -68,7 +68,7 @@ For the sake of this exercise, we're just going to [add one issue](https://help.
 <!-- ***********************************************************-->
 ## Step 3 - Create and move to a new branch
 
-There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` [branch](](https://help.github.com/articles/about-branches/)) is always deployable. In this flow, each branch is used for a separate feature.
+There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `main` [branch](](https://help.github.com/articles/about-branches/)) is always deployable. In this flow, each branch is used for a separate feature.
 
 1. Create a branch with a unique and descriptive name. For example, `create-heading-with-shadow`.
 
@@ -77,7 +77,7 @@ $ git branch create-heading-with-shadow
 ```
 </br>
 <img src="images/step3(1)GitFlow.png" width="300" height="auto" alt="repo visual after step 1">
-2. Leave the master branch by switching to the new branch you have just created.
+2. Leave the main branch by switching to the new branch you have just created.
 
 ```sh
 $ git checkout create-heading-with-shadow
@@ -187,7 +187,7 @@ At this point, your remote repo looks exactly the same as at the beginning. You 
 
 <!-- ***********************************************************-->
 ## Step 9 - Programmer 2 merges the pull request :+1:
-You should never merge your own pull requests. A PR gives the rest of your team the chance to review before your changes are merged into `master`. In your projects, you will be asking the other pair to do this.
+You should never merge your own pull requests. A PR gives the rest of your team the chance to review before your changes are merged into `main`. In your projects, you will be asking the other pair to do this.
 
 1. Programmer 2 reviews the changes and [merges the pull request](https://help.github.com/articles/merging-a-pull-request/#merging-a-pull-request-on-github) on GitHub.com.
 
@@ -254,7 +254,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
   $ git branch update-class-heading
   ```
 
-1. Both programmers leave the master branch by switching to the new branches.
+1. Both programmers leave the main branch by switching to the new branches.
 
   ```sh
   # Programmer 1:
@@ -325,19 +325,19 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 <img src="images/2step7GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
 <!-- ***********************************************************-->
-## Step 8 - Programmer 1 switches to `master` branch and pulls down the remote `master` branch
-We have so many programmers working on this project now, who knows what changes may have happened to the `master` branch since the last time we looked at the remote version that's on GitHub?
+## Step 8 - Programmer 1 switches to `main` branch and pulls down the remote `main` branch
+We have so many programmers working on this project now, who knows what changes may have happened to the `main` branch since the last time we looked at the remote version that's on GitHub?
 
-1. Programmer 1 switches to `master` branch.
+1. Programmer 1 switches to `main` branch.
 
   ```sh
-  $ git checkout master
+  $ git checkout main
   ```
 
-1. Programmer 1 [pulls](https://git-scm.com/docs/git-pull) the `master` branch from the remote (GitHub repo) to make sure that the local version of `master` is up to date with the remote (GitHub) version of `master`. (There should be no changes since neither of you has pushed any changes to the remote yet.) **It is a good practice to regularly check for changes on the remote before pushing your local changes.**
+1. Programmer 1 [pulls](https://git-scm.com/docs/git-pull) the `main` branch from the remote (GitHub repo) to make sure that the local version of `main` is up to date with the remote (GitHub) version of `main`. (There should be no changes since neither of you has pushed any changes to the remote yet.) **It is a good practice to regularly check for changes on the remote before pushing your local changes.**
 
   ```sh
-  $ git pull origin master
+  $ git pull origin main
   ```
 
 1. Programmer 1 switches back to the `fix-typo-heading` branch.
@@ -395,24 +395,24 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
   <img src="images/pull-request-tab.png" width="500" height="auto" alt="pull request tab button">
 
-2. Programmer 2 opens the live website on GitHub pages to double check that the spelling mistake has been corrected. Go to the repository settings on Github and scroll down until you find Github Pages title. Select the master branch as the source and save, and you'll then see the URL where the live website is. 
+2. Programmer 2 opens the live website on GitHub pages to double check that the spelling mistake has been corrected. Go to the repository settings on Github and scroll down until you find Github Pages title. Select the main branch as the source and save, and you'll then see the URL where the live website is. 
 
 <img src="images/2step12GitFlow.png" width="250" height="auto" alt="repo visual after step 1">
 
 
 <!-- ***********************************************************-->
-## Step 13 - Programmer 2 switches to `master` branch, pulls the remote `master` branch, tries to merge it into `update-class-heading` branch and :collision: resolves merge conflicts :collision:
+## Step 13 - Programmer 2 switches to `main` branch, pulls the remote `main` branch, tries to merge it into `update-class-heading` branch and :collision: resolves merge conflicts :collision:
 
-1. Programmer 2 switches to `master` branch.
+1. Programmer 2 switches to `main` branch.
 
   ```sh
-  $ git checkout master
+  $ git checkout main
   ```
 
-2. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
+2. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `main` branch to make sure that the latest version of the project is available locally.
 
   ```sh
-  $ git pull origin master
+  $ git pull origin main
   ```
 
   <img src="images/2step13(1)GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
@@ -423,13 +423,13 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
   $ git checkout update-class-heading
   ```
 
-4. Programmer 2 tries to merge `master` branch into `update-class-heading` branch.
+4. Programmer 2 tries to merge `main` branch into `update-class-heading` branch.
 
   ```sh
-  $ git merge master
+  $ git merge main
   ```
 
-5. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
+5. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and main markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
 
   ```html
   <body>
@@ -438,12 +438,12 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
       <h1 class="page-heading">GIT WORKFLOW WORKSHOW</h1>
   =======
       <h1 class="some-heading">GIT WORKFLOW WORKSHOP</h1>
-  >>>>>>> master
+  >>>>>>> main
 
   </body>
   ```
 
-6. Programmer 2 removes HEAD and master markers and leaves only one line with `<h1>` heading so that both issues are addressed.
+6. Programmer 2 removes HEAD and main markers and leaves only one line with `<h1>` heading so that both issues are addressed.
 
   ```html
   <body>
@@ -481,7 +481,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 <!-- ***********************************************************-->
 ## Step 15 - Programmer 2 creates a pull request
 
-1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `master` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
+1. Programmer 2 navigates to the repository on GitHub.com and creates a [pull request](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request) selecting `main` as a base branch and `update-class-heading` as a head branch. Please add a descriptive title (e.g. `Update class name in page heading`) and leave a comment linking the pull request with the issue `#<number>`. Please also select Programmer 1 as an [assignee](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
 
 
